@@ -1,9 +1,18 @@
-/* add css module styles here (optional) */
+@keyframes loaderAnimationToRight {
+    0% {
+        background-position: -468px 0
+    }
+    100% {
+        background-position: 468px 0
+    }
+}
 
-.test {
-  margin: 2em;
-  padding: 0.5em;
-  border: 2px solid #000;
-  font-size: 2em;
-  text-align: center;
+.defaultProp {
+    background-size: 1500px 1000px !important;
+    animation-fill-mode: forwards !important;
+    animation-iteration-count: infinite !important;
+}
+
+.contentLoaderRight {
+    animation-name: loaderAnimationToRight;
 }
