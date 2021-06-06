@@ -50,7 +50,7 @@ const CustomLoader = () => {
 
 
 ## Example 
-**Plug and play component**
+`**Plug and play component**`
 #
 ## 1. **Social Style**
 #
