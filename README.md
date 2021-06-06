@@ -29,7 +29,7 @@ export default App
 
 ```
 
-![Alt Text](./ss/defaultLoader.png)
+![Alt Text](ss/defaultLoader.png)
 
 
 
