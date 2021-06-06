@@ -1,31 +1,28 @@
-## content-loader
+## React Content Shimmer / Loader
 
 ***Content Loader to easily create placeholder loading, image loading, card loading, etc .., free to change the colors, speed, sizes, radius and shadow also have few deafult Loding Componets to use.***
-
 #
+![ExampleCode](https://raw.githubusercontent.com/Tirth886/contentLoader/main/ss/customizeLoader.gif)
 
-
-![ExampleCode](ss/customizeLoader.gif)
-
-[![NPM](https://img.shields.io/npm/v/content-loader.svg)](https://www.npmjs.com/package/content-loader) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/react-content-shimmer.svg)](https://www.npmjs.com/package/react-content-shimmer) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 # Features
 
 - ⚙ **Customizable:** Feel free to change the colors, speed, sizes, radius and shadow;
-- ▶**Plug and play:** with many deafault component to use see the example below.
+- ▶ **Plug and play:** with many deafault component to use see the example below.
 - 📝**DIY:** create your own custom loaders easily;
 
 
 ## Install
 
 ```bash
-npm install --save content-loader
+npm i --save react-content-shimmer
 ```
 
 # Usage
 
 ```jsx
-import { ContentLoader } from 'content-loader'
+import { ContentLoader } from 'react-content-shimmer'
 const CustomLoader = () => {
   return (
    <ContentLoader />
@@ -53,59 +50,59 @@ const CustomLoader = () => {
 `**Plug and play component**`
 #
 ## 1. **Social Style**
-#
+# 
 ```jsx
-import { SocialStyle } from 'content-loader'
+import { SocialStyle } from 'react-content-shimmer'
 const YourStyleName = () => {
   return (
     <SocialStyle  />
   )
 }
 ```
-![ExampleCode](ss/socialStyle.png)
+![ExampleCode](https://raw.githubusercontent.com/Tirth886/contentLoader/main/ss/socialStyle.png)
 
 ## 2. **Bullet List Style**
 #
 ```jsx
-import { BulletListStyle } from 'content-loader'
+import { BulletListStyle } from 'react-content-shimmer'
 const YourStyleName = () => {
   return (
     <BulletListStyle  />
   )
 }
 ```
-![ExampleCode](ss/bulletStyle.png)
+![ExampleCode](https://raw.githubusercontent.com/Tirth886/contentLoader/main/ss/bulletStyle.png)
 
 ## 3. **Code Style**
 #
 ```jsx
-import { CodeStyle } from 'content-loader'
+import { CodeStyle } from 'react-content-shimmer'
 const YourStyleName = () => {
   return (
     <CodeStyle  />
   )
 }
 ```
-![ExampleCode](ss/codeStyle.png)
+![ExampleCode](https://raw.githubusercontent.com/Tirth886/contentLoader/main/ss/codeStyle.png)
 
 ## 4. **Profile Style**
 #
 ```jsx
-import { ProfileStyle } from 'content-loader'
+import { ProfileStyle } from 'react-content-shimmer'
 const YourStyleName = () => {
   return (
     <ProfileStyle  />
   )
 }
 ```
-![ExampleCode](./ss/profileStyle.png)
+![ExampleCode](https://raw.githubusercontent.com/Tirth886/contentLoader/main/ss/profileStyle.png)
 
 
 ## 5. **Custom Creation**
 `Custom ContentLoader Creation with Css Tricks works Awsome 😎 Live Working Example at the Top`
 #
 ```jsx
-import { ContentLoader } from 'content-loader'
+import { ContentLoader } from 'react-content-shimmer'
 const YourStyleName = () => {
   return (
     <div style={{ padding: "1rem", display: "flex", alignItems: "center", justifyContent: "center" }} >
@@ -124,9 +121,9 @@ const YourStyleName = () => {
   )
 }
 ```
-
-
-
+## Contact
+<a href="https://www.linkedin.com/in/tirthjain886/"><img src="https://static-exp1.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" height="30" width="30"/></a>
+<a href="https://www.instagram.com/tirth.jain886/"><img src="https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png" height="30" width="30"/></a>
 
 ## License
 
