@@ -98,7 +98,7 @@ const YourStyleName = () => {
   )
 }
 ```
-![ExampleCode](ss/profileStyle.png)
+![ExampleCode](./ss/profileStyle.png)
 
 
 ## 5. **Custom Creation**
