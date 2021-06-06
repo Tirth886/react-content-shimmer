@@ -12,18 +12,26 @@ npm install --save content-loader
 
 ## Usage
 
-```tsx
+```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'content-loader'
-import 'content-loader/dist/index.css'
+import { ContentLoader } from 'content-loader'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const App = () => {
+  return (
+    <div>
+        <ContentLoader size={{ height: 100, width: 100 }}/>
+    </div>
+  )
 }
+
+export default App
+
 ```
+
+![Alt Text](./ss/defaultLoader.png)
+
+
 
 ## License
 
