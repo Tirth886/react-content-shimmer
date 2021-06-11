@@ -36,7 +36,7 @@ const CustomLoader = () => {
 | ------------------------------------------------------------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **`rows?: number`** <br/> Defaults to `0`             | - |  It's use to create multiple loader at once in a page |
 | **`background?: string`** <br/> Defaults to `#eeeeee` | - | It's is use to change the background of your ContetnLoader|
-|  **`forground?: string`** <br/> Defaults to `#dddddd` | - | It's is use to change the forground color of your ContetnLoader|
+| **`forground?: string`** <br/> Defaults to `#dddddd` | - | It's is use to change the forground color of your ContetnLoader|
 | **`elevation?: number`** <br /> Defaults to `0.08`    | - | It's is use for background outset shadow to your ContentLoader|
 | **`speed?: string`** <br /> Defaults to `fast`     | (`slow - fast - xfast`) | Controll Speed of animation|
 | **`rounded?: string`** <br /> Defaults to `0px`       | - | Curve of your Loader Component in px , percentage (%)...<br/>available for use in `<ContentLoader/> , <ProfileStyle />`|

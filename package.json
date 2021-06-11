@@ -9,7 +9,7 @@
     "module": "dist/index.modern.js",
     "homepage": "https://github.com/Tirth886/contentLoader",
     "source": "src/index.tsx",
-    "keywords": ["react", "content", "loader", "placeholder", "shimmer"],
+    "keywords": ["react", "content", "loader", "placeholder", "shimmer", "skeleton"],
     "engines": {
         "node": ">=10"
     },
