@@ -1,6 +1,6 @@
 ## React Content Shimmer / Loader
 
-***Content Loader to easily create placeholder loading, image loading, card loading, etc .., free to change the colors, speed, sizes, radius and shadow also have few deafult Loding Componets to use.***
+***Content Loader to easily create placeholder loading, image loading, card loading, etc .., free to change the colors, speed, sizes, radius and shadow also have few default Loading Components to use.***
 #
 ![ExampleCode](https://raw.githubusercontent.com/Tirth886/contentLoader/main/ss/customizeLoader.gif)
 
@@ -9,7 +9,7 @@
 # Features
 
 - ⚙ **Customizable:** Feel free to change the colors, speed, sizes, radius and shadow;
-- ▶ **Plug and play:** with many deafault component to use see the example below.
+- ▶ **Plug and play:** with many default components to use see the example below.
 - 📝**DIY:** create your own custom loaders easily;
 
 
@@ -34,14 +34,14 @@ const CustomLoader = () => {
 
 | <div style="width:250px">Prop name and type</div>             | Values                | Description                                                                                                                                                                                                                                                                                         |
 | ------------------------------------------------------------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`rows?: number`** <br/> Defaults to `0`             | - |  It's use to create multiple loader at once in a page |
-| **`background?: string`** <br/> Defaults to `#eeeeee` | - | It's is use to change the background of your ContetnLoader|
-|  **`forground?: string`** <br/> Defaults to `#dddddd` | - | It's is use to change the forground color of your ContetnLoader|
-| **`elevation?: number`** <br /> Defaults to `0.08`    | - | It's is use for background outset shadow to your ContentLoader|
-| **`speed?: string`** <br /> Defaults to `fast`     | (`slow - fast - xfast`) | Controll Speed of animation|
+| **`rows?: number`** <br/> Defaults to `0`             | - |  It's used to create multiple loader at once in a page |
+| **`background?: string`** <br/> Defaults to `#eeeeee` | - | It's used to change the background of your ContentLoader|
+|  **`foreground?: string`** <br/> Defaults to `#dddddd` | - | It's used to change the foreground color of your ContentLoader|
+| **`elevation?: number`** <br /> Defaults to `0.08`    | - | It's used for background outset shadow to your ContentLoader|
+| **`speed?: string`** <br /> Defaults to `fast`     | (`slow - fast - xfast`) | Control Speed of animation|
 | **`rounded?: string`** <br /> Defaults to `0px`       | - | Curve of your Loader Component in px , percentage (%)...<br/>available for use in `<ContentLoader/> , <ProfileStyle />`|
 | **`style?: object`**        | - | Give extra styling you want accept all css properties <br/>available for use in `<ContentLoader/>` |
-| **`size?: {height? : number, Width? : number}`**  | - | It's use to change the height and width your ContentLoader </br> only props use while creating custom ContentLoader `<ContentLoader />`  |
+| **`size?: {height? : number, Width? : number}`**  | - | It's used to change the height and width of your ContentLoader </br> only props use while creating custom ContentLoader `<ContentLoader />`  |
 | **`radius?: string`** <br /> Defaults to `sm`   | (`xs - sm - md - lg - xl`)  | Used as background of animation. |
 | **`variant?: string`** <br /> Defaults to `rounded`| (`default - rounded`)| Shape for the define Style like <br/>`<SocialStyle />, <CodeStyle />,<BulletStyle />`|
 
@@ -99,7 +99,7 @@ const YourStyleName = () => {
 
 
 ## 5. **Custom Creation**
-`Custom ContentLoader Creation with Css Tricks works Awsome 😎 Live Working Example at the Top`
+`Custom ContentLoader Creation with Css Tricks works Awesome 😎`
 #
 ```jsx
 import { ContentLoader } from 'react-content-shimmer'
