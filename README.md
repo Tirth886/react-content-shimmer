@@ -3,7 +3,7 @@
 ***<b> Note : New Version Have Breaking Changes Please Refer the docs ... Happy Coding 😀 </b>***
 <br/>
 
-***Content Loader to easily create placeholder loading, image loading, card loading, etc .., free to change the colors, speed, sizes, radius and shadow also have few deafult Loding Componets to use.***
+***Content Shimmer to easily create placeholder loading, image loading, card loading, etc .., free to change the colors, speed, sizes, radius and shadow also have few deafult Loding Componets to use.***
 #
 ![ExampleCode](https://raw.githubusercontent.com/Tirth886/contentLoader/main/ss/customizeLoader.gif)
 
@@ -38,15 +38,15 @@ const CustomLoader = () => {
 | <div style="width:250px">Prop name and type</div>             | Values                | Description                                                                                                                                                                                                                                                                                         |
 | ------------------------------------------------------------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **`rows?: number`** <br/> Defaults to `1`             | - |  It's use to create multiple loader at once in a page |
-| **`background?: string`** <br/> Defaults to `#eeeeee` | - | It's is use to change the background of your ContetnLoader|
-| **`forground?: string`** <br/> Defaults to `#dddddd` | - | It's is use to change the forground color of your ContetnLoader|
-| **`elevation?: number`** <br /> Defaults to `0.08`    | - | It's is use for background outset shadow to your ContentLoader|
+| **`background?: string`** <br/> Defaults to `#eeeeee` | - | It's is use to change the background of your ContentShimmer|
+| **`forground?: string`** <br/> Defaults to `#dddddd` | - | It's is use to change the forground color of your ContentShimmer|
+| **`elevation?: number`** <br /> Defaults to `0.08`    | - | It's is use for background outset shadow to your ContentShimmer|
 | **`speed?: string`** <br /> Defaults to `fast`     | (`slow - fast - xfast`) | Controll Speed of animation|
-| **`rounded?: string`** <br /> Defaults to `0px`       | - | Curve of your Loader Component in px , percentage (%)...<br/>available for use in `<ContentLoader/> , <ProfileStyle />`|
+| **`rounded?: string`** <br /> Defaults to `0px`       | - | Curve of your Loader Component in px , percentage (%)...<br/>available for use in `<ContentShimmer/> , <ProfileShimmer />`|
 | **`style?: object`**        | - | Give extra styling you want accept all css properties <br/> |
-| **`size?: {height? : number, Width? : number}`**  | - | It's use to change the height and width your ContentLoader </br> only props use while creating custom ContentLoader `<ContentLoader />`  |
+| **`size?: {height? : number, Width? : number}`**  | - | It's use to change the height and width your ContentShimmer </br> only props use while creating custom ContentShimmer `<ContentShimmer />`  |
 | **`radius?: string`** <br /> Defaults to `sm`   | (`xs - sm - md - lg - xl`)  | Used as background of animation. |
-| **`variant?: string`** <br /> Defaults to `rounded`| (`default - rounded`)| Shape for the define Style like <br/>`<SocialStyle />, <CodeStyle />,<BulletStyle />`|
+| **`variant?: string`** <br /> Defaults to `rounded`| (`default - rounded`)| Shape for the define Style like <br/>`<SocialShimmer />, <CodeShimmer />,<BulletListShimmer />`|
 
 
 ## Example 
@@ -102,23 +102,23 @@ const YourStyleName = () => {
 
 
 ## 5. **Custom Creation**
-`Custom ContentLoader Creation with Css Tricks works Awsome 😎 Live Working Example at the Top`
+`Custom ContentShimmer workes more well with the css or bootstrap classes Create with this Css Tricks will works Awsome 😎 Live Working Example at the Top`
 #
 ```jsx
-import { Shimmer } from 'react-content-shimmer'
+import { ContentShimmer } from 'react-content-shimmer'
 const YourStyleName = () => {
   return (
     <div className="p-2 d-flex align-items-center">
       <div>
         <div className="p-2 d-flex align-items-center">
-          <Shimmer size={{ height: 80, width: 80 }} rounded="10%" />
+          <ContentShimmer size={{ height: 80, width: 80 }} rounded="10%" />
           <div className="p-3">
-            <Shimmer style={{ marginBottom: "1rem" }} size={{ height: 15, width: 200 }} />
-            <Shimmer size={{ height: 15, width: 100 }} />
+            <ContentShimmer style={{ marginBottom: "1rem" }} size={{ height: 15, width: 200 }} />
+            <ContentShimmer size={{ height: 15, width: 100 }} />
           </div>
         </div>
-        <Shimmer style={{ marginTop: "1rem" }} rounded={"10px"} size={{ height: 15, width: 350 }} />
-        <Shimmer style={{ marginTop: "1rem" }} rounded={"10px"} size={{ height: 15, width: 350 }} />
+        <ContentShimmer style={{ marginTop: "1rem" }} rounded={"10px"} size={{ height: 15, width: 350 }} />
+        <ContentShimmer style={{ marginTop: "1rem" }} rounded={"10px"} size={{ height: 15, width: 350 }} />
       </div>
     </div>
   )
