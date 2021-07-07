@@ -1,11 +1,11 @@
 import React from 'react'
 
-import { ImageShimmer } from 'content-loader'
+import { BulletListShimmer } from 'content-loader'
 
 const App = () => {
   return (
     <div>
-      <ImageShimmer />
+      <BulletListShimmer />
     </div>
   )
 }

@@ -14,7 +14,7 @@ interface CustomLoader {
   }
 }
 
-const Shimmer = ({ rows, background, elevation, speed, size, forground, rounded, style }: CustomLoader): JSX.Element => {
+const ContentShimmer = ({ rows, background, elevation, speed, size, forground, rounded, style }: CustomLoader): JSX.Element => {
   let counter = [], i = 0, len = rows ? rows : 1;
   while (++i <= len) counter.push(i);
   const cardLoader = {
@@ -73,7 +73,7 @@ const ProfileShimmer = ({ rows, background, elevation, speed, forground, rounded
   return (<div>
     {counter.map((_, k) => {
       return (<div style={style} key={k}>
-        <Shimmer background={background} elevation={elevation} speed={speed} forground={forground} size={{ height: height, width: width }} rounded={_rounded} style={profileLoader} />
+        <ContentShimmer background={background} elevation={elevation} speed={speed} forground={forground} size={{ height: height, width: width }} rounded={_rounded} style={profileLoader} />
       </div>)
     })}
   </div>)
@@ -94,11 +94,11 @@ const SocialShimmer = ({ rows, elevation, speed, background, forground, variant,
             <div style={{ display: "flex", alignItems: "center" }}>
               <ProfileShimmer elevation={elevation} speed={speed} forground={forground} background={background} />
               <div style={{ paddingLeft: "2rem" }}>
-                <Shimmer style={{ marginBottom: "1rem" }} size={{ height: 7, width: 200 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
-                <Shimmer size={{ height: 7, width: 100 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
+                <ContentShimmer style={{ marginBottom: "1rem" }} size={{ height: 7, width: 200 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
+                <ContentShimmer size={{ height: 7, width: 100 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
               </div>
             </div>
-            <Shimmer style={{ marginTop: "1rem" }} size={{ height: 500, width: 500 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "20px"} />
+            <ContentShimmer style={{ marginTop: "1rem" }} size={{ height: 500, width: 500 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "20px"} />
           </div>
         )
       })}
@@ -109,18 +109,25 @@ const SocialShimmer = ({ rows, elevation, speed, background, forground, variant,
 const BulletListShimmer = ({ rows, elevation, speed, background, forground, variant, style }: SocialPlatFormStyle): JSX.Element => {
   let counter = [], i = 0, len = rows ? rows : 1;
   while (++i <= len) counter.push(i);
-  const height = 60
-  const width = 60
+  const height = 50
+  const width = 50
   return (
     <div>
       {counter.map((_, k) => {
         return (
           <div style={style} key={k}>
             <div style={{ display: "flex", alignItems: "center", marginBottom: "1rem" }}>
-              <Shimmer background={background} elevation={elevation} speed={speed} forground={forground} rounded={variant == "default" ? "0px" : "50%"} size={{ height: height, width: width }} />
+              <ContentShimmer background={background} elevation={elevation} speed={speed} forground={forground} rounded={variant == "default" ? "0px" : "50%"} size={{ height: height, width: width }} />
               <div>
-                <Shimmer style={{ marginLeft: "1rem", marginBottom: "0.5rem" }} size={{ height: 16, width: 250 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
-                <Shimmer style={{ marginLeft: "1rem" }} size={{ height: 11, width: 150 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
+                <ContentShimmer style={{ marginLeft: "1rem", marginBottom: "0.5rem" }} size={{ height: 16, width: 250 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
+                <ContentShimmer style={{ marginLeft: "1rem" }} size={{ height: 9, width: 150 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
+              </div>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", marginBottom: "1rem" }}>
+              <ContentShimmer background={background} elevation={elevation} speed={speed} forground={forground} rounded={variant == "default" ? "0px" : "50%"} size={{ height: height, width: width }} />
+              <div>
+                <ContentShimmer style={{ marginLeft: "1rem", marginBottom: "0.5rem" }} size={{ height: 16, width: 250 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
+                <ContentShimmer style={{ marginLeft: "1rem" }} size={{ height: 9, width: 150 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
               </div>
             </div>
           </div>
@@ -129,6 +136,7 @@ const BulletListShimmer = ({ rows, elevation, speed, background, forground, vari
     </div>
   )
 }
+
 const CodeShimmer = ({ rows, elevation, speed, background, forground, variant, style }: SocialPlatFormStyle): JSX.Element => {
   let counter = [], i = 0, len = rows ? rows : 1;
   while (++i <= len) counter.push(i);
@@ -138,25 +146,25 @@ const CodeShimmer = ({ rows, elevation, speed, background, forground, variant, s
         return (
           <div style={style} key={k}>
             <div style={{ marginBottom: "1rem" }}>
-              <Shimmer style={{ padding: "0.5rem" }} size={{ height: 10, width: 70 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
+              <ContentShimmer style={{ padding: "0.5rem" }} size={{ height: 10, width: 70 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
             </div>
             <div style={{ display: "flex", alignItems: "center", marginBottom: "1rem" }}>
-              <Shimmer style={{ marginLeft: "1rem", padding: "0.3rem" }} size={{ height: 12, width: 130 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
-              <Shimmer style={{ marginLeft: "1rem", padding: "0.3rem" }} size={{ height: 12, width: 80 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
-              <Shimmer style={{ marginLeft: "1rem", padding: "0.3rem" }} size={{ height: 12, width: 200 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
+              <ContentShimmer style={{ marginLeft: "1rem", padding: "0.3rem" }} size={{ height: 12, width: 130 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
+              <ContentShimmer style={{ marginLeft: "1rem", padding: "0.3rem" }} size={{ height: 12, width: 80 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
+              <ContentShimmer style={{ marginLeft: "1rem", padding: "0.3rem" }} size={{ height: 12, width: 200 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
             </div>
             <div style={{ display: "flex", alignItems: "center", marginBottom: "1rem" }}>
-              <Shimmer style={{ marginLeft: "1rem", padding: "0.3rem" }} size={{ height: 12, width: 130 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
-              <Shimmer style={{ marginLeft: "1rem", padding: "0.3rem" }} size={{ height: 12, width: 200 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
-              <Shimmer style={{ marginLeft: "1rem", padding: "0.3rem" }} size={{ height: 12, width: 80 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
+              <ContentShimmer style={{ marginLeft: "1rem", padding: "0.3rem" }} size={{ height: 12, width: 130 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
+              <ContentShimmer style={{ marginLeft: "1rem", padding: "0.3rem" }} size={{ height: 12, width: 200 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
+              <ContentShimmer style={{ marginLeft: "1rem", padding: "0.3rem" }} size={{ height: 12, width: 80 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
             </div>
             <div style={{ display: "flex", alignItems: "center", marginBottom: "1rem" }}>
-              <Shimmer style={{ marginLeft: "1rem", padding: "0.3rem" }} size={{ height: 12, width: 80 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
-              <Shimmer style={{ marginLeft: "1rem", padding: "0.3rem" }} size={{ height: 12, width: 130 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
-              <Shimmer style={{ marginLeft: "1rem", padding: "0.3rem" }} size={{ height: 12, width: 200 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
+              <ContentShimmer style={{ marginLeft: "1rem", padding: "0.3rem" }} size={{ height: 12, width: 80 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
+              <ContentShimmer style={{ marginLeft: "1rem", padding: "0.3rem" }} size={{ height: 12, width: 130 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
+              <ContentShimmer style={{ marginLeft: "1rem", padding: "0.3rem" }} size={{ height: 12, width: 200 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
             </div>
             <div >
-              <Shimmer style={{ padding: "0.5rem" }} size={{ height: 10, width: 70 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
+              <ContentShimmer style={{ padding: "0.5rem" }} size={{ height: 10, width: 70 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
             </div>
           </div>
         )
@@ -165,7 +173,7 @@ const CodeShimmer = ({ rows, elevation, speed, background, forground, variant, s
   )
 }
 
-const ProfileCardShimmer = ({ rows, elevation, speed, background, forground, variant, style }: SocialPlatFormStyle): JSX.Element => {
+const CardShimmer = ({ rows, elevation, speed, background, forground, variant, style }: SocialPlatFormStyle): JSX.Element => {
   let counter = [], i = 0, len = rows ? rows : 1;
   while (++i <= len) counter.push(i);
   return (
@@ -175,14 +183,14 @@ const ProfileCardShimmer = ({ rows, elevation, speed, background, forground, var
           <div style={style} key={k}>
             <div style={style}>
               <div style={{ display: "flex", alignItems: "center" }}>
-                <Shimmer size={{ height: 80, width: 80 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
+                <ContentShimmer size={{ height: 80, width: 80 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
                 <div style={{ paddingLeft: "2rem" }}>
-                  <Shimmer style={{ marginBottom: "0.5rem" }} size={{ height: 15, width: 150 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
-                  <Shimmer size={{ height: 15, width: 100 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
+                  <ContentShimmer style={{ marginBottom: "0.5rem" }} size={{ height: 15, width: 150 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
+                  <ContentShimmer size={{ height: 15, width: 100 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
                 </div>
               </div>
-              <Shimmer style={{ marginTop: "1rem" }} size={{ height: 20, width: 300 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
-              <Shimmer style={{ marginTop: "0.5rem" }} size={{ height: 20, width: 300 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
+              <ContentShimmer style={{ marginTop: "1rem" }} size={{ height: 20, width: 300 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
+              <ContentShimmer style={{ marginTop: "0.5rem" }} size={{ height: 20, width: 300 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
             </div>
           </div>
         )
@@ -196,6 +204,6 @@ export {
   SocialShimmer,
   BulletListShimmer,
   CodeShimmer,
-  ProfileCardShimmer,
+  CardShimmer,
 }
-export default Shimmer
+export default ContentShimmer
