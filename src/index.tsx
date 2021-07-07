@@ -181,7 +181,7 @@ const CardShimmer = ({ rows, elevation, speed, background, forground, variant, s
       {counter.map((_, k) => {
         return (
           <div style={style} key={k}>
-            <div style={style}>
+            <div>
               <div style={{ display: "flex", alignItems: "center" }}>
                 <ContentShimmer size={{ height: 80, width: 80 }} elevation={elevation} speed={speed} forground={forground} background={background} rounded={variant == "default" ? "0px" : "50px"} />
                 <div style={{ paddingLeft: "2rem" }}>
