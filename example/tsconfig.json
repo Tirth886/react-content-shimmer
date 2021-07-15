@@ -2,6 +2,7 @@
   "compilerOptions": {
     "outDir": "dist",
     "module": "esnext",
+    "baseUrl": "./src",
     "lib": [
       "dom",
       "esnext"
