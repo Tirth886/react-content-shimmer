@@ -1,6 +1,6 @@
 ## React Content Shimmer / Loader
 
-***<b> Note : New Version v2.2.5 Have Breaking Changes in one attributes Please Refer the docs ... Happy Coding 😀 </b>***
+***<b> Note : New Version v2.2.5 Corrected spelling Mistake Please Refer the docs ... Happy Coding 😀 </b>***
 <br/>
 
 ***Content Shimmer to easily create placeholder loading, image loading, card loading, etc .., free to change the colors, speed, sizes, radius and shadow also have few default Loading Components to use.***
