@@ -1,9 +1,9 @@
 ## React Content Shimmer / Loader
 
-***<b> Note : New Version Have Breaking Changes Please Refer the docs ... Happy Coding 😀 </b>***
+***<b> Note : New Version v2.2.5 Have Breaking Changes in one attributes Please Refer the docs ... Happy Coding 😀 </b>***
 <br/>
 
-***Content Shimmer to easily create placeholder loading, image loading, card loading, etc .., free to change the colors, speed, sizes, radius and shadow also have few deafult Loding Componets to use.***
+***Content Shimmer to easily create placeholder loading, image loading, card loading, etc .., free to change the colors, speed, sizes, radius and shadow also have few default Loading Components to use.***
 #
 ![ExampleCode](https://raw.githubusercontent.com/Tirth886/react-content-shimmer/main/ss/customizeLoader.gif)
 
@@ -12,7 +12,7 @@
 # Features
 
 - ⚙ **Customizable:** Feel free to change the colors, speed, sizes, radius and shadow;
-- ▶ **Plug and play:** with many deafault component to use see the example below.
+- ▶ **Plug and play:** with many default components to use see the example below.
 - 📝**DIY:** create your own custom loaders easily;
 
 
@@ -37,20 +37,20 @@ const YourStyleName = () => {
 
 | <div style="width:250px">Prop name and type</div>             | Values                | Description                                                                                                                                                                                                                                                                                         |
 | ------------------------------------------------------------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`rows?: number`** <br/> Defaults to `1`             | - |  It's use to create multiple loader at once in a page |
-| **`background?: string`** <br/> Defaults to `#eeeeee` | - | It's is use to change the background of your ContentShimmer|
-| **`forground?: string`** <br/> Defaults to `#dddddd` | - | It's is use to change the forground color of your ContentShimmer|
-| **`elevation?: number`** <br /> Defaults to `0.08`    | - | It's is use for background outset shadow to your ContentShimmer|
+| **`rows?: number`** <br/> Defaults to `1`             | - |  It's used to create multiple loader at once in a page |
+| **`background?: string`** <br/> Defaults to `#eeeeee` | - | It's is used to change the background of your ContentShimmer|
+| **`foreground?: string`** <br/> Defaults to `#dddddd` | - | It's is used to change the foreground color of your ContentShimmer|
+| **`elevation?: number`** <br /> Defaults to `0.08`    | - | It's is used for background outset shadow to your ContentShimmer|
 | **`speed?: number`** <br /> Defaults to `1s`     | - | Controll Speed of animation support value in seconds|
 | **`rounded?: string`** <br /> Defaults to `0px`       | - | Curve of your Loader Component in px , percentage (%)...<br/>available for use in `<ContentShimmer/> , <ProfileShimmer />`|
 | **`style?: object`**        | - | Give extra styling you want accept all css properties <br/> |
-| **`size?: {height? : number, Width? : number}`**  | - | It's use to change the height and width your ContentShimmer </br> only props use while creating custom ContentShimmer `<ContentShimmer />`  |
-| **`radius?: string`** <br /> Defaults to `sm`   | (`xs - sm - md - lg - xl`)  | Used as background of animation. |
+| **`size?: {height? : number, Width? : number}`**  | - | It's used to change the height and width your ContentShimmer </br> only props use while creating custom ContentShimmer `<ContentShimmer />`  |
+| **`radius?: string`** <br /> Defaults to `sm`   | (`xs - sm - md - lg - xl`)  | It's is used as giving curve from corner only available in `<ProfileShimmer />`. |
 | **`variant?: string`** <br /> Defaults to `rounded`| (`default - rounded`)| Shape for the define Style like <br/>`<SocialShimmer />, <CodeShimmer />,<BulletListShimmer />`|
-| **`animation?: string`** <br /> Defaults to `wave`| (`wave - pulse`)| Change animation for an of you shimmer or loader|
+| **`animation?: string`** <br /> Defaults to `wave`| (`wave - pulse`)| Change animation for any of your shimmer or loader|
 
 ## Example 
-`**Plug and play component**`
+`**Plug and play components**`
 #
 ## 1. **Social Style**
 # 
@@ -102,7 +102,7 @@ const YourStyleName = () => {
 
 
 ## 5. **Custom Creation**
-`Custom ContentShimmer workes more well with the css or bootstrap classes Create with this Css Tricks will works Awsome 😎 Live Working Example at the Top`
+`Custom ContentShimmer workes more well with the css or bootstrap classes Create with this Css Tricks will works Awesome 😎 Live Working Example at the Top`
 #
 ```jsx
 import ContentShimmer from 'react-content-shimmer'

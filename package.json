@@ -1,6 +1,6 @@
 {
     "name": "react-content-shimmer",
-    "version": "2.0.2",
+    "version": "2.2.5",
     "description": "Content Shimmer to easily create placeholder loading, image loading, card loading, etc .., free to change the colors, speed, sizes, radius and shadow also have few deafult Loding Componets to use. (CardShimmer,ProfileShimmer,SocialShimmer,BulletListShimmer,CodeShimmer)",
     "author": "Tirth886",
     "license": "MIT",
@@ -12,9 +12,9 @@
     "keywords": [
         "react",
         "content",
+        "shimmer",
         "loader",
         "placeholder",
-        "shimmer",
         "skeleton"
     ],
     "engines": {
