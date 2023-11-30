@@ -19,7 +19,7 @@ const ContentShimmer = ({ rows, background, elevation, speed, size, foreground, 
   let counter = [], i = 0, len = rows ? rows : 1;
   while (++i <= len) counter.push(i);
   const cardLoader = {
-    boxShadow: elevation ? `0 1px 2px 1px rgba(0, 0, 0, ${elevation})` : "0 1px 2px 1px rgba(0, 0, 0, 0.08), 0 -1px 3px 0 rgba(0, 0, 0, 0.06);",
+    boxShadow: elevation ? `0 1px 2px 1px rgba(0, 0, 0, ${elevation})` : "0 1px 2px 1px rgba(0, 0, 0, 0.08), 0 -1px 3px 0 rgba(0, 0, 0, 0.06)",
     animationDuration: typeof speed === "undefined" ? "1s" : speed + "s",
     borderRadius: rounded ? `${rounded}` : "0px",
     background: `linear-gradient(to right, ${background ? background : "#eeeeee"} 8%, ${foreground ? foreground : "#dddddd"} 18%, ${background ? background : "#eeeeee"} 33%)`,
